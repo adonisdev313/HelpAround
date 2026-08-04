@@ -1,0 +1,85 @@
+<section class="auth" aria-labelledby="login-title">
+  <div class="auth__layout">
+    <aside class="auth__motif">
+      <div class="scene" aria-hidden="true">
+        <div class="scene__light"></div>
+        <div class="scene__skyline">
+          <div class="building building--left">
+            <span class="building__roof"></span>
+            <span class="building__wall">
+              <span class="win"></span>
+              <span class="win"></span>
+            </span>
+          </div>
+          <div class="building building--center">
+            <span class="building__roof building__roof--steep"></span>
+            <span class="building__wall">
+              <span class="win win--lit"></span>
+              <span class="win"></span>
+              <span class="win"></span>
+            </span>
+          </div>
+          <div class="building building--right">
+            <span class="building__roof"></span>
+            <span class="building__wall">
+              <span class="win"></span>
+              <span class="win"></span>
+            </span>
+          </div>
+        </div>
+        <div class="scene__ground"></div>
+      </div>
+      <p class="auth__motif-copy">Trusted help, right around the block.</p>
+    </aside>
+
+    <div class="auth__panel">
+      <p class="auth__brand">HelpAround</p>
+
+      <header class="auth__header">
+        <h1 id="login-title" class="auth__title">Welcome back</h1>
+        <p class="auth__lede">
+          Sign in to find trusted local helpers—or lend a hand in your neighborhood.
+        </p>
+      </header>
+
+      <form
+        class="auth__form"
+        [formGroup]="loginForm"
+        (submit)="onSubmit()"
+      >
+        <div class="auth__field">
+          <label class="auth__label" for="login-email">Email</label>
+          <input
+            id="login-email"
+            class="auth__input"
+            type="email"
+            autocomplete="email"
+            formControlName="email"
+            placeholder="you@example.com"
+          />
+          <p class="auth__error">Enter a valid email address.</p>
+        </div>
+
+        <div class="auth__field">
+          <label class="auth__label" for="login-password">Password</label>
+          <input
+            id="login-password"
+            class="auth__input"
+            type="password"
+            autocomplete="current-password"
+            formControlName="password"
+            placeholder="••••••••"
+          />
+          <p class="auth__error">Password must be at least 8 characters.</p>
+        </div>
+
+        <button class="auth__submit" type="submit">Login</button>
+      </form>
+
+      <p class="auth__footer">
+        New here?
+        <a class="auth__link" href="/register">Create an account</a>
+      </p>
+    </div>
+  </div>
+</section>
