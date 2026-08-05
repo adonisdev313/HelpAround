@@ -2,6 +2,9 @@
 /dist
 /node_modules
 /build
+/.agents
+/.claude
+/.windsurf
 
 # Logs
 logs
@@ -35,6 +38,12 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Prisma
+prisma/migrations
+prisma/seed.ts
+prisma/schema.prisma
+prisma/seed.ts
+
 # dotenv environment variable files
 .env
 .env.development.local
@@ -54,3 +63,5 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+/generated/prisma
