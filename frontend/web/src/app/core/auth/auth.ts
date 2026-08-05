@@ -14,6 +14,7 @@ export class AuthState {
 
   constructor() {
     if (this.isBrowser) {
+      console.log('isLoggedIn', this.isLoggedIn());
       this.token.set(localStorage.getItem('token'));
       this.user.set(JSON.parse(localStorage.getItem('user') ?? 'null'));
     }

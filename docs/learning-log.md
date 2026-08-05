@@ -166,3 +166,6 @@ Today I have to learn:
 - What is signal wrapper and how to use that
 - Understood the structure of the Angular frontend. 
 - Why pages are crahsed sometimes when I am using localStorage in SSR mode (Learn about Injectable class, why @Component decorator is wrong in SSR)
+- What is PLATFORM_ID in angular core module
+- What is isPlatformBrowser function in angular/common module
+- What is CanActivateFn module in Angular

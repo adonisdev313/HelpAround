@@ -3,6 +3,8 @@ import { Home } from './features/home/home';
 import { Register } from './features/auth/register/register';
 import { Login } from './features/auth/login/login';
 import { Dashboard } from './features/dashboard/dashboard';
+import { authGuard } from './core/guards/guards';
+import { MainLayout } from './layout/main-layout/main-layout';
 
 export const routes: Routes = [
   {
@@ -18,7 +20,11 @@ export const routes: Routes = [
     component: Login
   },
   {
-    path: 'dashboard',
-    component: Dashboard
+    path: '',
+    component: MainLayout,
+    canActivate: [authGuard],
+    children: [
+      { path: 'dashboard', component: Dashboard }
+    ]
   }
 ];
