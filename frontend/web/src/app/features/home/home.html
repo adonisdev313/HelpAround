@@ -1,7 +1,344 @@
-<h2>
-  Welcome to HelpAround
-  </h2>
-  
-  <p>
-  Find trusted local helpers near you.
-  </p>
+<div class="ha-home">
+  <!-- Navigation -->
+  <header class="ha-nav">
+    <div class="ha-nav__inner">
+      <a class="ha-nav__brand" href="#">
+        <span class="ha-nav__logo" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="20" fill="var(--ha-teal)"/>
+            <path d="M12.5 18.2c0-2.1 1.55-3.7 3.55-3.7 1.2 0 2.25.55 2.95 1.45.7-.9 1.75-1.45 2.95-1.45 2 0 3.55 1.6 3.55 3.7 0 .85-.3 1.65-.8 2.3L20 28l-6.7-7.5c-.5-.65-.8-1.45-.8-2.3z" fill="white"/>
+            <path d="M15.2 17.6c.4-.7 1.15-1.15 2-1.15.7 0 1.3.3 1.7.8.4-.5 1-.8 1.7-.8.85 0 1.6.45 2 1.15" stroke="var(--ha-teal)" stroke-width="1.35" stroke-linecap="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="ha-nav__wordmark">HelpAround</span>
+      </a>
+
+      <nav class="ha-nav__links" aria-label="Primary">
+        <a href="#" class="ha-nav__link is-active">Home</a>
+        <a href="/dashboard" class="ha-nav__link">Find Help</a>
+        <a href="/dashboard" class="ha-nav__link">Find Work</a>
+        <a href="#" class="ha-nav__link">How It Works</a>
+        <a href="#" class="ha-nav__link">About Us</a>
+      </nav>
+
+      <div class="ha-nav__actions">
+        <button type="button" class="ha-nav__menu" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button type="button" class="ha-nav__lang" aria-label="Language">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/>
+          </svg>
+          <span>EN</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        <a href="/login" class="ha-nav__login">Log in</a>
+        <a href="/register" class="ha-btn ha-btn--primary ha-btn--sm">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero: full-bleed photo + left copy scrim -->
+  <section class="ha-hero">
+    <div class="ha-hero__bg" aria-hidden="true">
+      <img
+        src="https://images.unsplash.com/photo-1758273705849-861f3ee90333?auto=format&fit=crop&w=1800&q=80"
+        alt=""
+      />
+    </div>
+    <div class="ha-hero__inner">
+      <div class="ha-hero__content">
+        <h1 class="ha-hero__title">
+          Help is around you.<br />
+          <span class="ha-hero__title-accent">Find it now.</span>
+        </h1>
+        <p class="ha-hero__sub">
+          Connect with trusted helpers in your area for everyday tasks and get things done.
+        </p>
+
+        <div class="ha-search" role="search">
+          <div class="ha-search__field ha-search__field--query">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/>
+              <path d="M21 21l-4.3-4.3"/>
+            </svg>
+            <span class="ha-search__placeholder">What do you need help with?</span>
+          </div>
+          <span class="ha-search__divider" aria-hidden="true"></span>
+          <div class="ha-search__field ha-search__field--location">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+            <span class="ha-search__placeholder">Enter your location</span>
+          </div>
+          <a href="#" class="ha-btn ha-btn--primary ha-search__submit">Find Help</a>
+        </div>
+
+        <ul class="ha-trust">
+          <li>
+            <span class="ha-trust__icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </span>
+            Trusted helpers
+          </li>
+          <li>
+            <span class="ha-trust__icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </span>
+            Secure payments
+          </li>
+          <li>
+            <span class="ha-trust__icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </span>
+            Reviewed by users
+          </li>
+        </ul>
+      </div>
+
+      <div class="ha-hero__visual" aria-hidden="false">
+        <aside class="ha-proof">
+          <p class="ha-proof__label">Trusted by 5,000+ users</p>
+          <div class="ha-proof__row">
+            <div class="ha-proof__avatars" aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&h=80&q=80" alt="" />
+            </div>
+            <div class="ha-proof__rating">
+              <div class="ha-proof__stars" aria-label="5 stars">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10.2l-5 4.6 1.4 7.2L12 18.5 5.6 22l1.4-7.2-5-4.6 7.1-1.3L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10.2l-5 4.6 1.4 7.2L12 18.5 5.6 22l1.4-7.2-5-4.6 7.1-1.3L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10.2l-5 4.6 1.4 7.2L12 18.5 5.6 22l1.4-7.2-5-4.6 7.1-1.3L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10.2l-5 4.6 1.4 7.2L12 18.5 5.6 22l1.4-7.2-5-4.6 7.1-1.3L12 2z"/></svg>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="#FBBF24" aria-hidden="true"><path d="M12 2l2.9 6.9L22 10.2l-5 4.6 1.4 7.2L12 18.5 5.6 22l1.4-7.2-5-4.6 7.1-1.3L12 2z"/></svg>
+              </div>
+              <span class="ha-proof__score">4.8/5</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Categories -->
+  <section class="ha-categories">
+    <div class="ha-container">
+      <h2 class="ha-section-title">Popular Categories</h2>
+      <ul class="ha-categories__grid">
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Broom -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 4l-6.5 6.5"/>
+                <path d="M14.5 9.5l2 2"/>
+                <path d="M4 20c2.5-1 5.5-4 7.5-7l-2.5-2.5C6.5 12.5 4.5 16 3.5 19.5c-.2.7.3 1.2 1 1.1.2 0 .4 0 .5-.1z"/>
+                <path d="M9 12.5l2.5 2.5"/>
+                <path d="M17.5 6.5l1.5-1.5"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Cleaning</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Moving truck -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="7" width="12" height="10" rx="1"/>
+                <path d="M13 10h4l4 3v4h-8v-7z"/>
+                <circle cx="6" cy="19" r="2"/>
+                <circle cx="18" cy="19" r="2"/>
+                <path d="M8 19h8"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Moving</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Wrench -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Handyman</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Potted plant -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 13V8"/>
+                <path d="M12 8c0-2.5 1.5-4.5 4-5-1 2.5-.5 4.5 0 5"/>
+                <path d="M12 8c0-2.5-1.5-4.5-4-5 1 2.5.5 4.5 0 5"/>
+                <path d="M9 13h6l-1 8H10l-1-8z"/>
+                <path d="M8 13h8"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Gardening</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Faucet / plumbing -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 6V4h4v2"/>
+                <path d="M7 6v4a4 4 0 004 4h2a3 3 0 003-3V9h-3"/>
+                <path d="M7 12v6"/>
+                <path d="M5 20h4"/>
+                <path d="M16 14v2a2 2 0 01-2 2"/>
+                <path d="M18.5 9.5A2.5 2.5 0 0121 12"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Plumbing</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Lightning bolt -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Electrical</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- Paint roller -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="12" height="6" rx="1.5"/>
+                <path d="M9 9v3a2 2 0 002 2h2a2 2 0 012 2v1"/>
+                <path d="M13 19v2"/>
+                <rect x="11" y="17" width="4" height="3" rx="0.75"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">Painting</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="ha-cat-card">
+            <span class="ha-cat-card__icon" aria-hidden="true">
+              <!-- 3×3 grid -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="5" cy="5" r="2.1"/>
+                <circle cx="12" cy="5" r="2.1"/>
+                <circle cx="19" cy="5" r="2.1"/>
+                <circle cx="5" cy="12" r="2.1"/>
+                <circle cx="12" cy="12" r="2.1"/>
+                <circle cx="19" cy="12" r="2.1"/>
+                <circle cx="5" cy="19" r="2.1"/>
+                <circle cx="12" cy="19" r="2.1"/>
+                <circle cx="19" cy="19" r="2.1"/>
+              </svg>
+            </span>
+            <span class="ha-cat-card__label">More</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="ha-how">
+    <div class="ha-container">
+      <h2 class="ha-section-title ha-section-title--center">How It Works</h2>
+      <ol class="ha-how__steps">
+        <li class="ha-how__step">
+          <span class="ha-how__num">1</span>
+          <span class="ha-how__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 12h6M9 16h4"/>
+            </svg>
+          </span>
+          <h3 class="ha-how__title">Post a Task</h3>
+          <p class="ha-how__desc">Tell us what you need help with and where.</p>
+        </li>
+        <li class="ha-how__step">
+          <span class="ha-how__num">2</span>
+          <span class="ha-how__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="8" r="3"/>
+              <circle cx="16" cy="9" r="2.5"/>
+              <path d="M3 19c0-2.8 2.7-5 6-5s6 2.2 6 5"/>
+              <path d="M14 14.5c1.9-.7 4.5-.3 5.5 1.5"/>
+            </svg>
+          </span>
+          <h3 class="ha-how__title">Get Matched</h3>
+          <p class="ha-how__desc">We'll match you with trusted helpers.</p>
+        </li>
+        <li class="ha-how__step">
+          <span class="ha-how__num">3</span>
+          <span class="ha-how__icon" aria-hidden="true">
+            <!-- Clean speech bubble + dots (no frown arc) -->
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6a3 3 0 013-3h10a3 3 0 013 3v7a3 3 0 01-3 3H11l-4 3v-3H7a3 3 0 01-3-3V6z"/>
+              <circle cx="9" cy="9.5" r="1" fill="currentColor" stroke="none"/>
+              <circle cx="12" cy="9.5" r="1" fill="currentColor" stroke="none"/>
+              <circle cx="15" cy="9.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <h3 class="ha-how__title">Chat &amp; Confirm</h3>
+          <p class="ha-how__desc">Discuss details, get a quote and confirm.</p>
+        </li>
+        <li class="ha-how__step">
+          <span class="ha-how__num">4</span>
+          <span class="ha-how__icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8.5 12.5l2.5 2.5 5-5"/>
+            </svg>
+          </span>
+          <h3 class="ha-how__title">Task Completed</h3>
+          <p class="ha-how__desc">The task gets done and you leave a review.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Become a Helper CTA -->
+  <section class="ha-helper">
+    <div class="ha-container">
+      <div class="ha-helper__banner">
+        <div class="ha-helper__copy">
+          <h2 class="ha-helper__title">Become a Helper</h2>
+          <p class="ha-helper__sub">
+            Join our community of trusted helpers and earn money doing what you love.
+          </p>
+          <a href="/register" class="ha-btn ha-btn--primary">Sign up as Helper</a>
+        </div>
+        <div class="ha-helper__visual">
+          <div class="ha-helper__dots" aria-hidden="true"></div>
+          <img
+            class="ha-helper__photo"
+            src="/home/helpers-cutout.png"
+            alt="Two smiling helpers ready to help"
+            draggable="false"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

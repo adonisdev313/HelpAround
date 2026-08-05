@@ -73,6 +73,15 @@
           <p class="auth__error">Enter a valid email address.</p>
         </div>
 
+        <div class="auth_field">
+          <label class="auth__label" for="register-role">Role</label>
+          <select id="register-role" class="auth__input" formControlName="role">
+            <option value="client">Client</option>
+            <option value="user">Helper</option>
+          </select>
+          <p class="auth__error">Please select a role.</p>
+        </div>
+
         <div class="auth__field">
           <label class="auth__label" for="register-password">Password</label>
           <input

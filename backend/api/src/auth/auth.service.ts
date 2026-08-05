@@ -24,7 +24,7 @@ export class AuthService {
       name: data.name,
       email: data.email,
       password: hashedPassword,
-      role: 'user',
+      role: data?.role || 'user',
     });
 
     return {
